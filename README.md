@@ -5,12 +5,12 @@ which you can use to generate identicons for Stellar wallets - unique icons, gen
 
 ## Install
 ```shell
-go get -u github.com/overcat/stellar-identicon-go
+go get -u github.com/StellarCN/stellar-identicon-go
 ```
 
 ## Usage
 ```go
-import identicon "github.com/overcat/stellar-identicon-go"
+import identicon "github.com/StellarCN/stellar-identicon-go"
 
 func main() {
 	publicKey := "GAQL4ZLRIJBGSCXE6XC4XPZ5W6FGCJHXLAMB4M7ZQ52HFPDTL6GSVP4W"

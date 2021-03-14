@@ -1,4 +1,4 @@
-module github.com/overcat/stellar-identicon-go
+module github.com/StellarCN/stellar-identicon-go
 
 go 1.16
 
