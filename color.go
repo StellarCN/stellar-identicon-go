@@ -40,6 +40,10 @@ func (c *HSV) RGB() *RGB {
 			g = c.V
 			b = v3
 		case 3:
+			r = v1
+			g = v2
+			b = c.V
+		case 4:
 			r = v3
 			g = v1
 			b = c.V
