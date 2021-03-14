@@ -38,7 +38,7 @@ func Generate(publicKey string, width, height int) (*image.RGBA, error) {
 
 	keyData = keyData[2:]
 
-	var matrix [7][7]bool
+	var matrix [columns][rows]bool
 
 	columnsForCalculation := int(math.Ceil(columns / 2.0))
 	for column := 0; column < columnsForCalculation; column++ {
@@ -81,7 +81,7 @@ func getColor(data []byte) color.RGBA {
 	}
 	rgb := hsv.RGB()
 	return color.RGBA{
-		R: uint8(rgb.R), G: uint8(rgb.G), B: uint8(rgb.B), A: 255,
+		R: uint8(math.Round(rgb.R * 255)), G: uint8(math.Round(rgb.G * 255)), B: uint8(math.Round(rgb.B * 255)), A: 255,
 	}
 }
 
